@@ -1,0 +1,298 @@
+/********************************
+            General
+*********************************/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: top;
+}
+
+li{
+    list-style: none;
+}
+
+p, li{
+    font-size: 12px;
+}
+
+
+/********************************
+              Header
+*********************************/
+
+header{
+    background-color: #EAC926;
+}
+
+#header-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 2rem 0;
+}
+
+#logo{
+    width: 45%;
+}
+
+.barra-busqueda{
+    background-color: white;
+    width: 45%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-busqueda h2{
+    font-size: 16px;
+    display: inline;
+}
+
+.barra-busqueda div{
+    background-color: white;
+    width: 20px;
+    display: inline;
+}
+
+.cuotas{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cuotas div{
+    display: inline;
+}
+.cuotas p{
+    display: inline;
+}
+
+nav{
+    display: none;
+}
+
+.burger-menu{
+    padding-bottom: 1rem;
+    color: white;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+}
+
+.burger-menu i{
+    padding: 0.5rem;
+    border-radius: 15%;
+    background-color: #03264C;
+}
+
+
+
+/****** Tablet ******/
+
+@media (min-width: 361px){
+
+    #logo{
+        width: 30%;
+    }
+
+    .barra-busqueda{
+        width: 30%;
+    }
+
+    .cuotas{
+        width: 30%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+    }
+
+    .nav-izq-der{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+/****** Desktop ******/
+
+@media (min-width: 769px){
+   
+}
+
+/********************************
+              Main
+*********************************/
+
+main{
+    background-color: #ebebeb;
+}
+
+.main{
+    width: 90%;
+    margin: auto;
+}
+
+.ultima-visita, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ofertas{
+    padding-bottom: 1rem;
+}
+
+.titular{
+    font-size: 24px;
+    width: 100%;
+    margin: 1rem 0; 
+}
+
+.producto{
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow : 2px 2px 10px rgb (100 , 100 , 100);
+}
+
+.descripcion-producto{
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    position: relative;
+    padding: 1rem;
+}
+
+.descripcion-producto i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.precio-y-descuento{
+    display: flex;
+    align-items: center;
+}
+
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento{
+    width: 70%;
+    color: #39b54a;
+}
+
+.nombre-producto{
+    display: none;
+}
+
+/****** Tablet ******/
+
+@media (min-width: 361px){
+
+    .ultima-visita, .ofertas{
+        justify-content: space-between;
+    }
+
+    .producto{
+        width: 45%;
+        box-shadow : 0px 0px 10px rgb(100 , 100 , 100);
+    }
+
+    .precio{
+        font-size: 12px;
+    }
+
+    .nombre-producto{
+        display: block;
+        padding-top: 1rem;
+    }
+}
+
+/****** Desktop ******/
+
+@media (min-width: 769px){
+    .producto{
+        width: 23%;
+    }
+}
+
+/********************************
+              Footer
+*********************************/
+
+footer{
+    background-color: white;
+}
+
+.footer-section{
+    padding: 2rem 3rem;
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+}
+
+.footer-section .fas{
+    font-size: 2rem;
+    color: #03264C;
+    padding-bottom: 0.625rem;
+}
+
+.footer-section h2{
+    font-size: 16px
+}
+
+#copyright{
+    font-size: 12px;
+    text-decoration: none;
+    padding: 1rem 1rem;
+}
+
+/****** Tablet ******/
+
+@media (min-width: 361px){
+    
+}
+
+/****** Desktop ******/
+
+@media (min-width: 769px){
+    
+}
